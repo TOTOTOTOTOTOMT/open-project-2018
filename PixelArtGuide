@@ -1,0 +1,116 @@
+**General Pixel Art Guide
+
+    1. **Line and shape
+        a) Line
+            -curve line
+                -pixel-perfect: always clean you line to make sure it have perfect strokes. 
+                 Do it manually if your sofeware do not support this feature.
+                //insert pixel_perfect.png here
+            -straight line
+                -Diagonal line: always use ratio to make sure the drawing is nice and clean.
+                //insert diagonal_line_ratio.png here
+                
+        b) Shape
+            -if generate by tool, always clean manually.
+                
+        c) Anti-aliasing
+            *further discussion would be required, do not use them as for now. they are hard to remove but easy to add.
+            //insert anti_aliasing.png here
+                
+        d) outlining
+            *further discussion would be required. 
+                
+    2. **Shading and lighting
+        a) contrast and value: contract should be mantained at a reasonable level where the background, foreground and player can be easily differentiated but not splitted.
+        
+        b) positive and negative space: a clear relationship between positive and negative space should be maintained to ensure the ease of differentiating background and object.
+        
+        c) dithering: yes.
+            *further discussion would be required. a single style of dithering would be selected for all assets. 
+            //insert dithering.png here
+            
+        d)shading mode: got em use em. it could save you some time, but they are not mandatory.
+            
+    3. **Color and texture
+        a) property of colour: RGB color model is recommended for starter.
+        *detail information would be added upon request, you should know these already.
+            -Hue (H)
+            -Saturation (S)
+            -Value (V)
+            
+        b) alpha (A)
+        *further experiment would be required. do not use for now. if you have to use this channel to get the color you want, something has gone horribly wrong. stop it, get some help.
+        
+        c) color theory: use RGB. it just work.
+        *detail information would be added upon request.
+        
+        d) color harmany: use a color weel. 
+            -Complementary harmony: (reduce saturation to maintain balance)
+            -monochromatic harmony: (maintain contract when using this method)
+            -analogous harmony
+            -and more, you are a artist now, do what you want. 
+            
+        e) color palette
+            -Hue shifting: yes. HSL color model is recommended.
+            *further discussion would be required. it is not certain if this can be integrated into the lighting system, but it is a good habit to always do it.
+            
+        f) texture
+            -creating texture
+            -applying texture to object
+            
+        g) blend modes: got em use em. it could save you some time, not mandatory.
+            
+    4. **Tile
+        a) tile mode
+            -simple tile: add material in the side to connect nearby tile, avoid obvious pattern. 
+            
+        b) untiy nine slice
+        *further discussion would be required. it is a simple built in tool in unity that would do the trick but it does not allow you to edit the tile on the run. 
+            -draw mode
+                -simple: do not use. not suitable for anything unless you purposely want to trash your texture. 
+                -sliced
+                    -corner section: does not change size.
+                    -vertical secion: stretch horizontally.
+                    -hroizontal section: stretch vertically.
+                    -middle section: strech both horizontally and vertially.
+                -tile
+                    -corner section: does not change size.
+                    -vertical secion: replicate horizontally.
+                    -hroizontal section: replicate vertically.
+                    -middle section: replicate both horizontally and vertially.
+                    -continuous mode: allow the middle tile to replicate freely.
+                    -adaptive mode: only replicate when reach streach value. (does not work well for pixel art)
+                    
+        c) i am poor and i use windows paint which don't have tile support
+            -cutting technique: cut one tile into four part and rearrange them. ie. top left switch with bottom right, top right switch with bottom left. and add material in the middle to hide any obvious pattern.
+            
+    5. **Background
+        *detail information would be added upon request. it is one of the most difficult part, and it it too complex to describe in words.
+        -shadow
+        -color
+        -shape
+        -adding reflection: copy the object you want to reflect and flip it in the water / mirror, reduce the opacity and add distortion effect manually. this is the only place you should be using the alpha channel.
+        //insert reflection.png here
+        
+    6. **Character
+        *further discussion would be required. a single style would be selected for all characters.
+    
+    7. **Animation
+        *further discussion would be required. 
+        -onion skin
+        -blue/red mode
+        -frame tags
+        
+    8. **Miscellaneous
+        -layer: the layer between background and object should be always separated. 
+        -background: object should always have a transparent background. in other words, don't draw background for objects.
+        -tip and trick for asprite and Krita?
+            *further discussion would be required. 
+        -data recovery
+   
+**Recommonded software
+    Asprite     14.99CAD
+    Krita       free
+    Piskel      free
+    pyxel edit  9.00CAD (outdated version are free)
+    Photoshop   US$29.99/mo (just don't, unless you just happened to have a free one by accident)(additional information on how to config PS for pixel art will be added upon request)
